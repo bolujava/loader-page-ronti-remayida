@@ -36,9 +36,22 @@
   <h2 class="mt-3">Ronti Remayida is Waking Up...</h2>
   <p class="mt-2">Please wait a moment.</p>
   <script>
-    setTimeout(() => {
-      window.location.replace("/login");
-    }, 7000);
-  </script>
+  const backendUrl = "https://ronti-remayida-app.onrender.com/";
+
+  async function checkBackend() {
+    try {
+      const response = await fetch(backendUrl, { method: 'GET' });
+      if (response.ok) {
+        window.location.href = "https://ronti-remayida-app.onrender.com/login";
+      } else {
+        setTimeout(checkBackend, 4000);
+      }
+    } catch (e) {
+      setTimeout(checkBackend, 4000);
+    }
+  }
+
+  checkBackend();
+</script>
 </body>
 </html>

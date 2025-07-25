@@ -1,19 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "https://ronti-remayida-app.onrender.com/" },
-    { "source": "/login", "destination": "https://ronti-remayida-app.onrender.com/login" },
-    { "source": "/images/:match*", "destination": "/images/:match*" },
-    { "source": "/logout", "destination": "https://ronti-remayida-app.onrender.com/logout" },
-    { "source": "/register", "destination": "https://ronti-remayida-app.onrender.com/register" },
-    { "source": "/verify/:token", "destination": "https://ronti-remayida-app.onrender.com/verify/:token" },
-    { "source": "/confirm_email", "destination": "https://ronti-remayida-app.onrender.com/confirm_email" },
-    { "source": "/resend_verification", "destination": "https://ronti-remayida-app.onrender.com/resend_verification" },
-    { "source": "/forgot_password", "destination": "https://ronti-remayida-app.onrender.com/forgot_password" },
-    { "source": "/reset_password/:token", "destination": "https://ronti-remayida-app.onrender.com/reset_password/:token" },
-    { "source": "/add_birthday", "destination": "https://ronti-remayida-app.onrender.com/add_birthday" },
-    { "source": "/delete_birthday/:id", "destination": "https://ronti-remayida-app.onrender.com/delete_birthday/:id" },
-    { "source": "/edit_birthday/:id", "destination": "https://ronti-remayida-app.onrender.com/edit_birthday/:id" },
-    { "source": "/all_birthdays", "destination": "https://ronti-remayida-app.onrender.com/all_birthdays" },
-    { "source": "/test_email", "destination": "https://ronti-remayida-app.onrender.com/test_email" }
-  ]
+  "cleanUrls": true
 }
