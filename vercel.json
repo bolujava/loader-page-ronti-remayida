@@ -2,6 +2,7 @@
   "rewrites": [
     { "source": "/", "destination": "https://ronti-remayida-app.onrender.com/" },
     { "source": "/login", "destination": "https://ronti-remayida-app.onrender.com/login" },
+    { "source": "/images/:match*", "destination": "/images/:match*" },
     { "source": "/logout", "destination": "https://ronti-remayida-app.onrender.com/logout" },
     { "source": "/register", "destination": "https://ronti-remayida-app.onrender.com/register" },
     { "source": "/verify/:token", "destination": "https://ronti-remayida-app.onrender.com/verify/:token" },
