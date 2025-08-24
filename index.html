@@ -38,6 +38,10 @@
   <script>
   const backendUrl = "https://ronti-remayida-app.onrender.com/";
 
+  const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+  const backendUrl = isLocal
+  ? "http://127.0.0.1:5000"
+  : "https://ronti-remayida-app.onrender.com/";
   async function checkBackend() {
     try {
       const response = await fetch(backendUrl, { method: 'GET' });
