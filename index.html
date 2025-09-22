@@ -39,12 +39,12 @@
   const isLocal = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
   const backendUrl = isLocal
   ? "http://127.0.0.1:5000"
-  : "https://ronti-remayida-app.onrender.com/";
+  : "https://ronti-remayida-qyw5.onrender.com/";
   async function checkBackend() {
     try {
       const response = await fetch(backendUrl, { method: 'GET' });
       if (response.ok) {
-        window.location.href = "https://ronti-remayida-app.onrender.com/login";
+        window.location.href = "https://ronti-remayida-qyw5.onrender.com/login";
       } else {
         setTimeout(checkBackend, 4000);
       }
@@ -52,7 +52,6 @@
       setTimeout(checkBackend, 4000);
     }
   }
-
   checkBackend();
 </script>
 </body>
